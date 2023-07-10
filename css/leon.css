@@ -1,0 +1,34 @@
+/* Start Variables */
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, "work Sans";
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 600px;
+}
+/* Small Screen*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium Screen */
+@media(min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+/* Large Screen */
+@media(min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
