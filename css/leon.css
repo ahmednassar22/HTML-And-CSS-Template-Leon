@@ -1,4 +1,7 @@
 /* Start Variables */
+:root {
+    --main-color: #10cab7;
+}
 /* End Variables */
 /* Start Global Rules */
 * {
@@ -6,7 +9,7 @@
 }
 
 body {
-    font-family: sans-serif, "work Sans";
+    font-family: "work Sans", sans-serif;
 }
 
 .container {
@@ -101,6 +104,7 @@ header .links ul {
     min-width: 200px;
     top: calc(100% + 15px);
     display: none;
+    z-index: 1;
 }
 
 header .links ul::after {
@@ -137,3 +141,37 @@ header .links ul li:not(:last-child) {
 }
 
 /* End header */
+/* Start Landing Section */
+.landing {
+    background-image: url(../image/Moonlight.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+
+.landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 34px;
+}
+/* End Landing Section */
