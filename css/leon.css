@@ -2,6 +2,8 @@
 :root {
     --main-color: #10cab7;
     --secondary-color: #2c4755;
+    --padding-section: 60px;
+    --section-background: #f6f6f6;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -54,7 +56,7 @@ body {
 }
 
 .special-heading+p {
-    margin-top: -50px;
+    margin-top: -30px;
     font-size: 20px;
     text-align: center;
     color: #797979;
@@ -65,7 +67,7 @@ body {
         font-size: 60px;
     }
     .special-heading + p {
-        margin-top: -40px;
+        margin-top: -20px;
     }
 }
 /* End Components */
@@ -127,7 +129,7 @@ header .links ul {
     margin: 0;
     padding: 0;
     right: 0px;
-    background-color: #f6f6f6;
+    background-color: var(--section-background);
     position: absolute;
     min-width: 200px;
     top: calc(100% + 15px);
@@ -138,7 +140,7 @@ header .links ul {
 header .links ul::after {
     content: "";
     border: 10px solid;
-    border-color: transparent transparent #f6f6f6 transparent;
+    border-color: transparent transparent var(--section-background) transparent;
     position: absolute;
     top: -20px;
     right: 5px;
@@ -205,8 +207,8 @@ header .links ul li:not(:last-child) {
 /* End Landing Section */
 /* Start Features */
 .features {
-    padding: 60px 0;
-    background-color: #f6f6f6;
+    padding: var(--padding-section) 0;
+    background-color: var(--section-background);
 }
 
 .features .container {
@@ -233,6 +235,9 @@ header .links ul li:not(:last-child) {
 }
 /* End Features */
 /* Start Services */
+.services {
+    padding: var(--padding-section) 0;
+}
 .services .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -289,7 +294,7 @@ header .links ul li:not(:last-child) {
     content:'';
     position: absolute;
     background: var(--secondary-color);
-    width: 80px;
+    width: 100px;
     height: calc(100% + 80px);
     top: -40px;
     right: 0;
@@ -297,3 +302,38 @@ header .links ul li:not(:last-child) {
 }
 
 /* End Services */
+/* Start Portfolio*/
+.portfolio {
+    padding: var(--padding-section) 0;
+    background-color: var(--section-background);
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+.portfolio .card {
+    background-color: white;
+}
+
+.portfolio .card img {
+    max-width: 100%;
+}
+
+.portfolio .card .inf {
+    padding: 20px;
+}
+
+.portfolio .card h3 {
+    margin: 0;
+}
+
+.portfolio .card p {
+    color: #777777 ;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* End Portfolio*/
