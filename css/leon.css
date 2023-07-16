@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "work Sans", sans-serif;
 }
@@ -458,6 +462,7 @@ header .links ul li:not(:last-child) {
     margin-top: 25px;
     /* font-size: 16px; */
 }
+
 .contact .info .social i {
     margin-left: 10px;
     color: var(--secondary-color);
